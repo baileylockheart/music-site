@@ -223,7 +223,7 @@ a{
     text-decoration: underline;
     color:inherit;
 }
-#color:hover{
+.fa-brands:hover, #color:hover{
     color: var(--warmpink);
     transition: 0.6s ease;
     -webkit-transition: 0.6s ease
@@ -236,9 +236,13 @@ a{
 svg{
     min-width: 16px;
     width: 1.25rem;
-    margin-top:-67px;
-    margin-bottom:-67px;
+    margin: -67px 0;
     fill:var(--white)
+}
+.fa-brands{
+    font-size:1.15rem;
+    margin:2px 2px 15px;
+    color: var(--white)
 }
 #headerimage{
     width: inherit;
