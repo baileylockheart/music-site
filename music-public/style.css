@@ -143,15 +143,12 @@ h1, h2, h3, h4{
     font-family: var(--serif);
 }
 textarea{
-    margin-top:55px;
     background-color: var(--white);
     color: var(--black);
     border: dashed 3px var(--black);
     font-family: var(--sans);
-    font-size:0.75rem;
-    width:15vw;
-    height:15vh;
-    padding:5px
+    font-size:0.5rem;
+    padding: 5px;
 }
 #footertext{
     text-align: center;
@@ -241,7 +238,7 @@ svg{
 }
 .fa-brands{
     font-size:1.15rem;
-    margin:2px 2px 15px;
+    margin:2px 2px 10px;
     color: var(--white)
 }
 #headerimage{
@@ -292,6 +289,9 @@ footer{
         width:60vw;
         font-size: 0.95rem
     }
+    p, h1, h2, h3{
+        text-align: center;
+    }  
     
 }
 @media (max-width: 768px){
@@ -307,9 +307,6 @@ footer{
     .even, .dual{
         max-width:65vw;
         width:100%
-    }
-    textarea{
-        width:50vw;
     }
     .inner{
         width: 60vw;
