@@ -1,2 +1,2 @@
-# baileylockheart.com
-My music website!
+# Bailey Lockheart
+This is my music website! I'm aware that it's not on a .com domain yet, but it will be soon(ish) and I couldn't name the repo just baileylockheart because of the github config files :'D
