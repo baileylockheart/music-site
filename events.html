@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bailey Lockheart: Events</title>
+
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light only"/>
+    <meta name="theme-color" content="#C8A2CF">
+    
+    <!--meta tags-->
+    <meta name="description" content="Where to find Bailey!"/>
+    <meta property="og:site_name" content="Bailey Lockheart"/>
+    <meta property="og:title" content="Bailey Lockheart: Events"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Where to find Bailey!"/>
+    <meta property="og:image" content="https://i.imgur.com/yE0jXJ7.png"/>
+    <meta property="og:image:height" content="800"/>
+    <meta property="og:url" content="https://baileylockheart.com/events"/>
+    
+    <!--and the bird app bc they just have to be special-->
+    <meta name="twitter:title" content="Bailey Lockheart: Events" />
+    <meta name="twitter:image" content="https://i.imgur.com/yE0jXJ7.png">
+    <meta name="twitter:description" content="Where to find Bailey!">
+    <meta property="twitter:card" content="summary_large_image"/>
+    
+    <link rel="canonical" href="https://baileylockheart.com/events"/>
+    <link rel="icon" type="image/x-icon" href="/images/lockheartLOVE.ico">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <script src="/javascript/jquery-1.10.2.js"></script>
+
+    <style>
+        .showfont{
+            font-size: 1.15rem;
+            line-height:1.75;
+            margin-top: 20px;
+        }
+        .showdiv{
+            font-size: 1.15rem; 
+            line-height:1.75;
+            justify-content: space-around; 
+            display: flex;
+        }
+        @media (max-width: 768px){
+            .showfont{
+                font-size: 1.25rem;
+                display:block;
+                line-height: 0.5em;
+            }
+            .showdiv{
+                display: block;
+            }
+        }
+    </style>
+    <div id="preloader"></div>
+</head>
+<body>
+<div id="container">
+    <div id="nav-placeholder"></div>
+
+    <div id="mainwhite" style="display:block;overflow: hidden;">
+            <h1 style="text-align:center">Events</h1>
+            <hr>
+            <div class="showdiv">
+                <span class="showfont">Month Day, Year</span><span class="showfont">Venue Name</span><span class="showfont">City, State</span>
+                <a href="/" target="_blank"><button class="dual" style="margin:0.9rem;">Tickets</button></a>
+            </div>
+            <hr class="transparent">
+            <div class="showdiv">
+                <span class="showfont">Month Day, Year</span><span class="showfont">Venue Name</span><span class="showfont">City, State</span>
+                <a href="/" target="_blank"><button class="dual" style="margin:0.9rem;">Tickets</button></a>
+            </div>
+    </div>
+
+    <footer>
+        <p id="footertext">♡&nbsp;&nbsp;<a id="color" href="https://neocities.org/site/baileylockheart" target="_blank">Follow the Site</a>&nbsp;&nbsp;♡</p>
+        <a href="https://www.tiktok.com/@bailey_lockheart" target="_blank"><svg><use xlink:href="#icon-tiktok"></use></svg></a>&nbsp;&nbsp;&nbsp;
+        <a href="https://www.instagram.com/bailey_lockheart/" target="_blank"><svg><use xlink:href="#icon-insta"></use></svg></a>&nbsp;&nbsp;&nbsp;
+        <a href="https://www.youtube.com/@bailey_lockheart" target="_blank"><svg><use xlink:href="#icon-youtube"></use></svg></a>
+    </footer>
+</div>
+<script>
+    $(function(){
+        $("#nav-placeholder").load("nav.html");
+    });
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function () {
+      loader.style.display = "none";
+    });
+</script>
+</body>
+</html> 

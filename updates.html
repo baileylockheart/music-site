@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bailey Lockheart: Updates</title>
+
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light only"/>
+    <meta name="theme-color" content="#C8A2CF">
+    
+    <!--meta tags-->
+    <meta name="description" content="Think of this as a sort of microblog!"/>
+    <meta property="og:site_name" content="Bailey Lockheart"/>
+    <meta property="og:title" content="Bailey Lockheart: Updates"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Think of this as a sort of microblog!"/>
+    <meta property="og:image" content="https://i.imgur.com/yE0jXJ7.png"/>
+    <meta property="og:image:height" content="800"/>
+    <meta property="og:url" content="https://baileylockheart.neocities.org/updates"/>
+    
+    <!--and the bird app bc they just have to be special-->
+    <meta name="twitter:title" content="Bailey Lockheart: Updates" />
+    <meta name="twitter:image" content="https://i.imgur.com/yE0jXJ7.png">
+    <meta name="twitter:description" content="Think of this as a sort of microblog!">
+    <meta property="twitter:card" content="summary_large_image"/>
+    
+    <link rel="canonical" href="https://baileylockheart.neocities.org/updates"/>
+    <link rel="icon" type="image/x-icon" href="/images/lockheartLOVE.ico">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <script src="/javascript/jquery-1.10.2.js"></script>
+
+    <div id="preloader"></div>
+</head>
+<body>
+<div id="container">
+    <div id="nav-placeholder"></div>
+
+    <div id="mainwhite">
+        <div id="center">
+            <h1>Updates!&nbsp;&nbsp;<sub><sup>Think of this as a sort of microblog!</sup></sub></h1>
+            <hr>
+            <div class="inner">
+                <!-- start sw-rss-feed code --> 
+                <script type="text/javascript"> 
+                    <!-- 
+                    rssfeed_url = new Array(); 
+                    rssfeed_url[0]="https://raw.githubusercontent.com/baileylockheart/rss-feeds/main/musicupdates.xml";  
+                    rssfeed_frame_width="100%"; 
+                    rssfeed_frame_height="225"; 
+                    rssfeed_scroll="off"; 
+                    rssfeed_scroll_step="6"; 
+                    rssfeed_scroll_bar="on"; 
+                    rssfeed_target="_blank"; 
+                    rssfeed_font_size="18"; 
+                    rssfeed_font_face="Alegreya Sans"; 
+                    rssfeed_border="off"; 
+                    rssfeed_css_url=""; 
+                    rssfeed_title="off"; 
+                    rssfeed_title_name=""; 
+                    rssfeed_title_bgcolor="#3366ff"; 
+                    rssfeed_title_color="#fff"; 
+                    rssfeed_title_bgimage=""; 
+                    rssfeed_footer="off"; 
+                    rssfeed_footer_name=""; 
+                    rssfeed_footer_bgcolor="#f7ebf7"; 
+                    rssfeed_footer_color="#5e0073"; 
+                    rssfeed_footer_bgimage=""; 
+                    rssfeed_item_title_length="50"; 
+                    rssfeed_item_title_color="#47324A"; 
+                    rssfeed_item_bgcolor="#f7ebf7"; 
+                    rssfeed_item_bgimage=""; 
+                    rssfeed_item_border_bottom="on"; 
+                    rssfeed_item_source_icon="off"; 
+                    rssfeed_item_date="on"; 
+                    rssfeed_item_description="on"; 
+                    rssfeed_item_description_length="200"; 
+                    rssfeed_item_description_color="#47324A"; 
+                    rssfeed_item_description_link_color="#935adb"; 
+                    rssfeed_item_description_tag="on"; 
+                    rssfeed_no_items="0"; 
+                    rssfeed_cache = "aba6fb73b293f4014a00c25374f90589"; 
+                    //--> 
+                </script> 
+                <script type="text/javascript" src="//feed.surfing-waves.com/js/rss-feed.js"></script>
+                <!-- end sw-rss-feed code -->
+            </div>
+        </div>
+    </div>
+    <div id="mainpink">
+        <div id="centerleft">
+            <div class="left">
+                <h1>Website Stuff!&nbsp;&nbsp;<script src="https://nuthead.neocities.org/ring/ring.js"></script></h1>
+                <h1><img height="31" src="/images/button.gif" style="float: right;margin-right:60px;margin-top:10px;border-radius:0px;" width="87"/>My Button!&nbsp;&nbsp;</h1>
+            </div>
+            <div class="right">
+                <textarea style="margin-top:30px"><a href="http://baileylockheart.neocities.org" target="_blank"><img src="http://baileylockheart.neocities.org/images/button.gif"/></a></textarea>
+                <br><br>
+                <a href="https://raw.githubusercontent.com/baileylockheart/rss-feeds/main/musicupdates.xml"><img src="/images/rss-logo.png" style="border-radius: 0;margin-bottom: -1px;"></a><br><br>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p id="footertext">♡&nbsp;&nbsp;<a id="color" href="https://neocities.org/site/baileylockheart" target="_blank">Follow the Site</a>&nbsp;&nbsp;♡</p>
+        <a href="https://www.tiktok.com/@bailey_lockheart" target="_blank"><svg><use xlink:href="#icon-tiktok"></use></svg></a>&nbsp;&nbsp;&nbsp;
+        <a href="https://www.instagram.com/bailey_lockheart/" target="_blank"><svg><use xlink:href="#icon-insta"></use></svg></a>&nbsp;&nbsp;&nbsp;
+        <a href="https://www.youtube.com/@bailey_lockheart" target="_blank"><svg><use xlink:href="#icon-youtube"></use></svg></a>
+    </footer>
+</div>
+<style>
+    h2{
+       line-height: 0.75px;
+    }
+    button{
+        padding:3px;
+        box-shadow: none;
+    }
+</style>
+<script>
+    $(function(){
+        $("#nav-placeholder").load("nav.html");
+    });
+    $(function(){
+        $("#posts-placeholder").load("posts.html");
+    });
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function () {
+      loader.style.display = "none";
+    });
+</script>
+</body>
+</html> 
