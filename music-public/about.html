@@ -27,7 +27,6 @@
     <link rel="canonical" href="https://baileylockheart.netlify.app/about"/>
     <link rel="icon" type="image/x-icon" href="/images/lockheartLOVE.ico">
     <link rel="stylesheet" type="text/css" href="/style.css">
-    <script src="/javascript/jquery-1.10.2.js"></script>
     <script src="/javascript/fontawesome.js"></script>
 
     <div id="preloader"></div>
@@ -47,7 +46,7 @@
 </style>
 <body>
 <div id="container">
-    <div id="nav-placeholder"></div>
+    <div id="nav"><script src="/javascript/navbar.js"></script></div>
 
     <div id="mainwhite">
         <div id="center">
@@ -88,9 +87,6 @@
 
 </div>
 <script>
-    $(function(){
-        $("#nav-placeholder").load("nav.html");
-    });
     var loader = document.getElementById("preloader");
     window.addEventListener("load", function () {
       loader.style.display = "none";

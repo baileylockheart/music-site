@@ -1,4 +1,4 @@
-function myMind() {
+      function myMind() {
     var x = document.getElementById("mymind");
     if (x.style.display === "none") {
       x.style.display = "block";
