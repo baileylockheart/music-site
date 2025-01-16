@@ -49,6 +49,13 @@
   text-shadow:1px 0px 1px black;
   background-color: #608AE7;
 }
+.dropdown {
+    position: relative;
+    display: inline;
+}
+.show {
+    display:block;
+}
 @media (max-width: 1024px){
     p{
         text-align: left;
@@ -64,111 +71,122 @@
             <h1 style="text-align: center;">My Lyrics!</h1>
             <hr style="width:65vw">
             <h2 style="text-align: center;">A Different Place</h2>
-            <button class="dual" style="background-color: #4D44DC;" onclick="myMind()">My Mind</button>
-            <div id="mymind" class="adifferentplace lyrics">
-      <p>My head's always been a safe space<br>A land this world can't reach<br>A world without disappointment<br>Or insecurity<br>My head's always been a part of me<br>As I'm sure that you would know<br>So I built a realm inside it<br>And there's nowhere I'd rather go<br>
-        <br>
-      Cause my mind holds castles made from gold<br>And sunrises painted green<br>The magic there is pure<br>And the science there is strong<br>And I'd love to live inside it<br>If I can bring you along!<br>
-        <br>        
-      My brain's always been a shelter<br>A place that's free from fear<br>Somewhere safe, that shields away<br>The things that keep me here<br>My brain has never left me<br>Not even for a day<br>And when it comes down to it<br>That's more than most could say<br>
-        <br>
-      But my mind holds castles made from gold<br>And sunrises painted green<br>The magic there is pure<br>And the science there is strong<br>And I'd love to live inside it<br>If I can bring you along!<br>
-        <br>        
-      My heart is smaller than you'd think<br>And yet, you still have a place<br>To think that you'd be here<br>To know that you would stay<br>It brings a unique comfort<br>That's never gonna change!<br>
-        <br>        
-        Cause my mind holds castles made from gold<br>And sunrises painted green<br>The magic there is pure<br>And the science there is strong<br>And I'm glad to live inside it<br>Knowing you'd come along!
-        
-      </p>
+            <div class="dropdown">
+              <button class="dual" style="background-color: #4D44DC;"  onclick="myMind()" class="dropbtn">My Mind</button>
+              <div id="mymind" class="adifferentplace lyrics">
+                <p>My head's always been a safe space<br>A land this world can't reach<br>A world without disappointment<br>Or insecurity<br>My head's always been a part of me<br>As I'm sure that you would know<br>So I built a realm inside it<br>And there's nowhere I'd rather go<br>
+                  <br>
+                Cause my mind holds castles made from gold<br>And sunrises painted green<br>The magic there is pure<br>And the science there is strong<br>And I'd love to live inside it<br>If I can bring you along!<br>
+                  <br>        
+                My brain's always been a shelter<br>A place that's free from fear<br>Somewhere safe, that shields away<br>The things that keep me here<br>My brain has never left me<br>Not even for a day<br>And when it comes down to it<br>That's more than most could say<br>
+                  <br>
+                But my mind holds castles made from gold<br>And sunrises painted green<br>The magic there is pure<br>And the science there is strong<br>And I'd love to live inside it<br>If I can bring you along!<br>
+                  <br>        
+                My heart is smaller than you'd think<br>And yet, you still have a place<br>To think that you'd be here<br>To know that you would stay<br>It brings a unique comfort<br>That's never gonna change!<br>
+                  <br>        
+                  Cause my mind holds castles made from gold<br>And sunrises painted green<br>The magic there is pure<br>And the science there is strong<br>And I'm glad to live inside it<br>Knowing you'd come along!
+                </p>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dual" style="background-color: #4D44DC;"  onclick="bigHug()" class="dropbtn">Big Hug</button>
+              <div id="bighug" class="adifferentplace lyrics">
+                <p>I wish you saw yourself how I do<br>For you are beautiful to me<br>It hurts to know that you can't see it<br>Just like a butterfly that still can't see its wings<br>
+                  <br>
+                  And when you talk, you know I listen<br>Each word you say's another song to write<br>And yet this song right here's the first one<br>I truly hope will someday catch your eye<br>
+                  <br>
+                  And oh, maybe I'm a fool<br>For falling for a stranger through a screen<br>But oh, I'll hold my phone too<br>And hope that you can feel a big hug from me<br>
+                  <br>
+                  I wish you heard your voice how I do<br>Something strong and sweet that's magic every time<br>Cause if you knew just how I hear it<br>You'd never think it's bad, you'd know it's right<br>
+                  <br>
+                  And you're the one who'd always tell me<br>Don't cry, it's gonna be alright!<br>And how I wish that I could tell you<br>The same when I see tears within your eyes
+                  <br>
+                  And oh, maybe I'm a fool<br>For falling for a stranger through a screen<br>But oh, I'll hold my phone too<br>And hope that you can feel a big hug from me<br>
+                  <br>
+                  And I just hope you can feel<br>My affection as tangible and real<br>And all I know is, you deserve it<br>Cause you are the one who helped me heal<br>
+                  <br>
+                  I wish you knew how much I loved you<br>Your eyes, your mind, your heart, your smile<br>So take your time, but know I miss you<br>I'll stay right here, even if it's been a while!<br>
+                  <br>
+                  And oh, maybe I'm a fool<br>For falling for a stranger through a screen<br>But oh, I'll hold my phone too<br>And hope that you can feel a big hug from me
+                </p>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dual" style="background-color: #4D44DC;"  onclick="existentialCrisis()" class="dropbtn">Existential Crisis</button>
+              <div id="existentialcrisis" class="adifferentplace lyrics">
+                <p>Sometimes I go about my day and never see a second<br>And then I blink and suddenly, I pop into existence<br>How is it my hands can move<br>Without my conscious thought?<br>Is this my only body or is this the one I've got?<br>
+                  <br>
+                  I fall into a loop in which I wonder<br>Am I even awake right now? If-<br>I can tell the time, do I have the right to ponder<br>What would happen if I tried to fly?<br>
+                  <br>
+                  When I think onto my memories<br>From four to six to nine<br>It's like watching back a movie of somebody else's time<br>Why don't I remember all the things they say I've done?<br>Was that even me or am I a different someone?<br>
+                  <br>
+                  -Fall into a loop in which I wonder<br>Am I even alive right now? If-<br>I can read these lines, do I have the right to ponder<br>What would happen if I tried to kill my-<br>
+                  <br>
+                  All I know for certain's gone flying out the window<br>Cause I'm the only consciousness I can ever really guarantee exists<br>Will the world end when I die?<br>Does it make me narcissistic<br>That in my house, I beg for home?<br>How could I know?<br>
+                  <br>
+                  If I lost my mind, would I ever really know?<br>Am I locked behind the glass or am I still in control?<br>Where do I exist? What am I without my thoughts?<br>If I don't know who I am, can I say who I am not?<br>
+                  <br>
+                  I fall into a loop in which I wonder<br>Do I even know myself? If-<br>I can speak my mind, do I have the right to ponder<br>What would happen if I<br>
+                  <br>
+                  All I know for certain's gone flying out the window<br>Cause I'm the only consciousness I can ever really guarantee exists<br>Will the world end when I die?<br>Does it make me narcissistic<br>That in my house, I beg for home?<br>I'll never know<br>
+                </p>
+              </div>
             </div> 
-            <button class="dual" style="background-color: #4D44DC;" onclick="bigHug()">Big Hug</button>
-            <div id="bighug" class="adifferentplace lyrics">
-      <p>I wish you saw yourself how I do<br>For you are beautiful to me<br>It hurts to know that you can't see it<br>Just like a butterfly that still can't see its wings<br>
-        <br>
-        And when you talk, you know I listen<br>Each word you say's another song to write<br>And yet this song right here's the first one<br>I truly hope will someday catch your eye<br>
-        <br>
-        And oh, maybe I'm a fool<br>For falling for a stranger through a screen<br>But oh, I'll hold my phone too<br>And hope that you can feel a big hug from me<br>
-        <br>
-        I wish you heard your voice how I do<br>Something strong and sweet that's magic every time<br>Cause if you knew just how I hear it<br>You'd never think it's bad, you'd know it's right<br>
-        <br>
-        And you're the one who'd always tell me<br>Don't cry, it's gonna be alright!<br>And how I wish that I could tell you<br>The same when I see tears within your eyes
-        <br>
-        And oh, maybe I'm a fool<br>For falling for a stranger through a screen<br>But oh, I'll hold my phone too<br>And hope that you can feel a big hug from me<br>
-        <br>
-        And I just hope you can feel<br>My affection as tangible and real<br>And all I know is, you deserve it<br>Cause you are the one who helped me heal<br>
-        <br>
-        I wish you knew how much I loved you<br>Your eyes, your mind, your heart, your smile<br>So take your time, but know I miss you<br>I'll stay right here, even if it's been a while!<br>
-        <br>
-        And oh, maybe I'm a fool<br>For falling for a stranger through a screen<br>But oh, I'll hold my phone too<br>And hope that you can feel a big hug from me
-      </p>
+            <div class="dropdown">
+              <button class="dual" style="background-color: #4D44DC;"  onclick="realToMe()" class="dropbtn">Real to Me</button>
+              <div id="realtome" class="adifferentplace lyrics">
+                <p>Full of standards I can't reach<br>How can I reach them from the back seat?<br>Reality's blurred, what's fake and real to me?<br>I'll never know when my mind's stuck in monotony<br>
+                  <br>
+                  I'm slipping through a colored show of blue skies<br>I'm falling through the lines upon a screen<br>They say it's fake, but this is my chance at a life<br>Their fiction is my new reality<br>
+                  <br>
+                  Oh, this is familiar<br>These faces, these places, this pain<br>But it's better than what I had before<br>This "cartoon"s what's keeping me sane<br>Because it's real to me<br>Oh, cause it's real to me!<br>
+                  <br>
+                  What's this world but endless gray?<br>I just want to sink inside my brain<br>They all seem worried about my ways<br>My life's never been focused<br>That hasn't changed<br>
+                  <br>
+                  It's vibrant colors long since faded<br>It's crisp clear lines torn into shreds<br>The real world is broken, and full of dread<br>I'll stay within the one inside my head<br>
+                  <br>
+                  Oh, this is familiar<br>These faces, these places, this pain<br>But it's better than what I had before<br>This "cartoon"s what's keeping me sane<br>Because it's real to me<br>Oh, cause it's real to me!<br>
+                  <br>
+                  Is it adventure that awaits me?<br>Love, or slice of life?<br>I don't care, my old world can't compare, cause-<br>This is the one place that's right!<br>
+                  <br>
+                  Oh, this is familiar<br>These faces, these places, this pain<br>But it's better than what I had before<br>This "cartoon"s what's keeping me sane<br>Because it's real to me<br>Oh, cause it's real to me!<br>Oh, this is my home now, so proud!<br>This world, this is real to me!
+                </p>
+              </div>
             </div> 
-            <button class="dual" style="background-color: #4D44DC;" onclick="existentialCrisis()">Existential Crisis</button>
-            <div id="existentialcrisis" class="adifferentplace lyrics">
-      <p>Sometimes I go about my day and never see a second<br>And then I blink and suddenly, I pop into existence<br>How is it my hands can move<br>Without my conscious thought?<br>Is this my only body or is this the one I've got?<br>
-        <br>
-        I fall into a loop in which I wonder<br>Am I even awake right now? If-<br>I can tell the time, do I have the right to ponder<br>What would happen if I tried to fly?<br>
-        <br>
-        When I think onto my memories<br>From four to six to nine<br>It's like watching back a movie of somebody else's time<br>Why don't I remember all the things they say I've done?<br>Was that even me or am I a different someone?<br>
-        <br>
-        -Fall into a loop in which I wonder<br>Am I even alive right now? If-<br>I can read these lines, do I have the right to ponder<br>What would happen if I tried to kill my-<br>
-        <br>
-        All I know for certain's gone flying out the window<br>Cause I'm the only consciousness I can ever really guarantee exists<br>Will the world end when I die?<br>Does it make me narcissistic<br>That in my house, I beg for home?<br>How could I know?<br>
-        <br>
-        If I lost my mind, would I ever really know?<br>Am I locked behind the glass or am I still in control?<br>Where do I exist? What am I without my thoughts?<br>If I don't know who I am, can I say who I am not?<br>
-        <br>
-        I fall into a loop in which I wonder<br>Do I even know myself? If-<br>I can speak my mind, do I have the right to ponder<br>What would happen if I<br>
-        <br>
-        All I know for certain's gone flying out the window<br>Cause I'm the only consciousness I can ever really guarantee exists<br>Will the world end when I die?<br>Does it make me narcissistic<br>That in my house, I beg for home?<br>I'll never know<br>
-      </p>
+            <div class="dropdown">
+              <button class="dual" style="background-color: #4D44DC;"  onclick="Thought()" class="dropbtn">Thought</button>
+              <div id="thought" class="adifferentplace lyrics">
+                <p>I'm in love with your eyes<br>And I wonder, would they shine<br>If you knew what I was thinking 'bout tonight?<br>Would I finally see them glow?<br>When you finally get to know<br>Just how much I care about your eyes?<br>
+                  <br>
+                  I'm in love with your mind<br>And I ask, are you surprised<br>When you learn the things about you that I like?<br>Would you have a thousand questions<br>When I finally mention<br>Just how much I care about your mind?<br>
+                  <br>
+                  I'm in love with your heart<br>I've no clue of where to start<br>But can you feel the way it matches up with mine?<br>Would you want to stop and listen?<br>To hear the subtle difference<br>And just how much I care about your heart?<br>
+                  <br>
+                  I'm in love with a thought<br>It feels real, but it's not<br>And yet, you have a place within my heart<br>You'll never get to hear this<br>But this is how I cope with<br>The fact that I'm in love with a thought
+                </p>
+              </div>
             </div>
-            <button class="dual" style="background-color: #4D44DC;" onclick="realToMe()">Real to Me</button>
-            <div id="realtome" class="adifferentplace lyrics">
-      <p>Full of standards I can't reach<br>How can I reach them from the back seat?<br>Reality's blurred, what's fake and real to me?<br>I'll never know when my mind's stuck in monotony<br>
-        <br>
-        I'm slipping through a colored show of blue skies<br>I'm falling through the lines upon a screen<br>They say it's fake, but this is my chance at a life<br>Their fiction is my new reality<br>
-        <br>
-        Oh, this is familiar<br>These faces, these places, this pain<br>But it's better than what I had before<br>This "cartoon"s what's keeping me sane<br>Because it's real to me<br>Oh, cause it's real to me!<br>
-        <br>
-        What's this world but endless gray?<br>I just want to sink inside my brain<br>They all seem worried about my ways<br>My life's never been focused<br>That hasn't changed<br>
-        <br>
-        It's vibrant colors long since faded<br>It's crisp clear lines torn into shreds<br>The real world is broken, and full of dread<br>I'll stay within the one inside my head<br>
-        <br>
-        Oh, this is familiar<br>These faces, these places, this pain<br>But it's better than what I had before<br>This "cartoon"s what's keeping me sane<br>Because it's real to me<br>Oh, cause it's real to me!<br>
-        <br>
-        Is it adventure that awaits me?<br>Love, or slice of life?<br>I don't care, my old world can't compare, cause-<br>This is the one place that's right!<br>
-        <br>
-        Oh, this is familiar<br>These faces, these places, this pain<br>But it's better than what I had before<br>This "cartoon"s what's keeping me sane<br>Because it's real to me<br>Oh, cause it's real to me!<br>Oh, this is my home now, so proud!<br>This world, this is real to me!
-      </p>
-            </div>
-            <button class="dual" style="background-color: #4D44DC;" onclick="thought()">Thought</button>
-            <div id="thought" class="adifferentplace lyrics">
-      <p>I'm in love with your eyes<br>And I wonder, would they shine<br>If you knew what I was thinking 'bout tonight?<br>Would I finally see them glow?<br>When you finally get to know<br>Just how much I care about your eyes?<br>
-        <br>
-        I'm in love with your mind<br>And I ask, are you surprised<br>When you learn the things about you that I like?<br>Would you have a thousand questions<br>When I finally mention<br>Just how much I care about your mind?<br>
-        <br>
-        I'm in love with your heart<br>I've no clue of where to start<br>But can you feel the way it matches up with mine?<br>Would you want to stop and listen?<br>To hear the subtle difference<br>And just how much I care about your heart?<br>
-        <br>
-        I'm in love with a thought<br>It feels real, but it's not<br>And yet, you have a place within my heart<br>You'll never get to hear this<br>But this is how I cope with<br>The fact that I'm in love with a thought
-      </p>
-            </div>
-            <button class="dual" style="background-color: #4D44DC;" onclick="beyondTheHorizon()">Beyond the Horizon</button>
-            <div id="beyondthehorizon" class="adifferentplace lyrics">
-      <p>Diamonds and shining jewels<br>That's not what I'm searching for<br>Gold was made for fools<br>So then what? What am I seeking?<br>I wanna see what lays beyond<br>The gate that's always keeping me inside<br>
-        <br>
-        Oh I, I want to fly<br>I need to see the world with my own eyes<br>
-        <br>
-        I wanna see what the world has in store<br>Wanna live like I just need more<br>I wanna dream like I'm fast asleep<br>I wanna show the walls that they can't beat me<br>I wanna know what lies ahead<br>See the world through a different lens<br>I wanna roar like an untamed lion<br>I wanna know what lies<br>Beyond the horizon!<br>
-        <br>
-        Power and all it's glory<br>That's not what I'm seeking out<br>These things can't satisfy me<br>So then what? What do I wish for?<br>I want to see something unknown<br>To open brand new doors<br>And venture out<br>
-        <br>
-        And now, just look around!<br>Why should I keep my feet upon the ground when I-<br>
-        <br>
-        Wanna see what the world has in store<br>Wanna live like I just need more<br>I wanna dream like I'm fast asleep<br>I wanna show the walls that they can't beat me<br>I wanna know what lies ahead<br>See the world through a different lens<br>I wanna roar like an untamed lion<br>I wanna know what lies<br>Beyond the horizon!<br>
-        <br>
-        Being trapped's a form of torture<br>But it's how I was raised<br>The world I used to live in was<br>Just a glorified cage!<br>And if I were to find a way<br>To live a brand new life someday<br>The world would grow before my eyes<br>To bigger, brighter, bluer skies!<br>
-        <br>
-        I wanna see what the world has in store<br>Wanna live like I just need more<br>I wanna dream like I'm fast asleep<br>I wanna show the walls that they can't beat me<br>I wanna know what lies ahead<br>See the world through a different lens<br>I wanna roar like an untamed lion<br>I wanna know what lies<br>Beyond the horizon!
-      </p>
-            </div>
+            <div class="dropdown">
+              <button class="dual" style="background-color: #4D44DC;"  onclick="beyondTheHorizon()" class="dropbtn">Beyond the Horizon</button>
+              <div id="beyondthehorizon" class="adifferentplace lyrics">
+                <p>Diamonds and shining jewels<br>That's not what I'm searching for<br>Gold was made for fools<br>So then what? What am I seeking?<br>I wanna see what lays beyond<br>The gate that's always keeping me inside<br>
+                  <br>
+                  Oh I, I want to fly<br>I need to see the world with my own eyes<br>
+                  <br>
+                  I wanna see what the world has in store<br>Wanna live like I just need more<br>I wanna dream like I'm fast asleep<br>I wanna show the walls that they can't beat me<br>I wanna know what lies ahead<br>See the world through a different lens<br>I wanna roar like an untamed lion<br>I wanna know what lies<br>Beyond the horizon!<br>
+                  <br>
+                  Power and all it's glory<br>That's not what I'm seeking out<br>These things can't satisfy me<br>So then what? What do I wish for?<br>I want to see something unknown<br>To open brand new doors<br>And venture out<br>
+                  <br>
+                  And now, just look around!<br>Why should I keep my feet upon the ground when I-<br>
+                  <br>
+                  Wanna see what the world has in store<br>Wanna live like I just need more<br>I wanna dream like I'm fast asleep<br>I wanna show the walls that they can't beat me<br>I wanna know what lies ahead<br>See the world through a different lens<br>I wanna roar like an untamed lion<br>I wanna know what lies<br>Beyond the horizon!<br>
+                  <br>
+                  Being trapped's a form of torture<br>But it's how I was raised<br>The world I used to live in was<br>Just a glorified cage!<br>And if I were to find a way<br>To live a brand new life someday<br>The world would grow before my eyes<br>To bigger, brighter, bluer skies!<br>
+                  <br>
+                  I wanna see what the world has in store<br>Wanna live like I just need more<br>I wanna dream like I'm fast asleep<br>I wanna show the walls that they can't beat me<br>I wanna know what lies ahead<br>See the world through a different lens<br>I wanna roar like an untamed lion<br>I wanna know what lies<br>Beyond the horizon!
+                </p>
+              </div>
+            </div> 
             <hr style="width:65vw">
             <h2 style="text-align: center;">Other Sites!</h2>
             <div id="center">
