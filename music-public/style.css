@@ -27,7 +27,7 @@ body:before{
     top:0;
     transform: scale(1);
     z-index: -700;
-    background-image: url(/images/heartubeatu.svg), 
+    background-image: url("/images/heartubeatu.svg"), 
     linear-gradient(230deg, var(--accent) 0%, #6D4794 60%);
     background-size: cover, auto;
     background-position: center, 0% 0%;
@@ -64,7 +64,7 @@ body, html {
     margin-right:auto;
     line-height:normal;
 }
-#mainpink{
+.mainpink{
     width:100%;
     background-color: var(--pink);
     color:var(--black);
@@ -74,8 +74,7 @@ body, html {
     font-weight:600;
     padding:10px
 }
-#mainwhite{
-    display:flex;
+.mainwhite{
     width:100%;
     background-color: var(--white);
     color:var(--black);
@@ -85,7 +84,7 @@ body, html {
     font-weight:600;
     padding:10px
 }
-#maintransparent{
+.maintransparent{
     display:flex;
     width:100%;
     background-color: #FBC9FF7C;
@@ -108,14 +107,14 @@ body, html {
     text-align: start;
     max-width: 50%;
 }
-#center{
+.center{
     display:table;
     text-align: center;
     margin-left:auto;
     margin-right:auto;
-    max-width: 65vw;
+    width: 65vw;
 }
-#centerleft{
+.centerleft{
     display:flex;
     text-align: center;
     margin-left:auto;
@@ -123,7 +122,7 @@ body, html {
     max-width: 65vw;
 }
 .inner{
-    height:15rem;
+    height:20rem;
     width:45vw;
     margin-left:auto;
     margin-right:auto;
@@ -135,6 +134,7 @@ p, h1, h2, h3, h4{
 }
 p{
     font-size: 1.1rem;
+    font-weight: 600;
 }
 h1, h2, h3, h4{
     font-family: var(--serif);
@@ -144,7 +144,7 @@ textarea{
     color: var(--black);
     border: dashed 3px var(--black);
     font-family: var(--sans);
-    font-size:0.5rem;
+    font-size:0.75rem;
     padding: 5px;
 }
 #footertext{
@@ -160,19 +160,12 @@ button{
     background-color: var(--purple);
     font-family: var(--sans);
     font-size:1.15rem;
-    line-height:1;
     font-weight:600;
     padding: 15px 25px;
-    margin-bottom: 0.7rem;
-    margin-left: 0.45rem;
-    margin-right: 0.45rem;
+    margin:0  0.45rem 0.7rem;
     text-align: center;
     text-decoration: none;
-    display: inline-flex;
     box-shadow: 0px 5px #C9BFC9;
-    cursor: pointer;
-    display: table-cell;
-    vertical-align: middle;
 }
 button:hover, #headerimage:hover {
     transition: all .2s ease-out;
@@ -188,14 +181,12 @@ hr{
     border:none;
     border-radius:5px;
     height:0.15rem;
-
 }
 hr.transparent{
     background-color:#47324A69;
     border:none;
     border-radius:5px;
     height:0.15rem;
-
 }
 hr.invisible{
     display:none;
@@ -269,7 +260,7 @@ footer{
         max-width: inherit;
         padding:inherit;
     }
-    #centerleft{
+    .centerleft{
         display:table
     }
     hr.invisible{
@@ -286,7 +277,9 @@ footer{
     p, h1, h2, h3{
         text-align: center;
     }  
-    
+    br.invisi{
+        display:none
+    }
 }
 @media (max-width: 768px){
     html{

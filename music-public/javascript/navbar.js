@@ -122,37 +122,37 @@ document.getElementById("nav").innerHTML = `<style>
                         ♡
                     </li>
                     <li class="nav-item">
-                        <a href="/about" class="nav-link">About</a>
+                        <a href="/about.html" class="nav-link">About</a>
                     </li>
                     <li class="line">
                         &nbsp;|&nbsp;
                     </li>
                     <li class="nav-item">
-                        <a href="/lyrics" class="nav-link">Lyrics</a>
+                        <a href="/lyrics.html" class="nav-link">Lyrics</a>
                     </li>
                     <li class="line">
                         &nbsp;|&nbsp;
                     </li>
                     <li class="nav-item">
-                        <a href="/music" class="nav-link">Music</a>
+                        <a href="/music.html" class="nav-link">Music</a>
                     </li>
                     <li class="line">
                         &nbsp;|&nbsp;
                     </li><!--
                     <li class="nav-item">
-                        <a href="/events" class="nav-link">Events</a>
+                        <a href="/events.html" class="nav-link">Events</a>
                     </li>
                     <li class="line">
                         &nbsp;|&nbsp;
                     </li>-->
                     <li class="nav-item">
-                        <a href="/updates" class="nav-link">Updates</a>
+                        <a href="/updates.html" class="nav-link">Updates</a>
                     </li>
                     <li class="line">
                         &nbsp;|&nbsp;
                     </li>
                     <li class="nav-item">
-                        <a href="/contact" class="nav-link">Contact</a>
+                        <a href="/contact.html" class="nav-link">Contact</a>
                     </li>
                     <li class="line">
                         ♡
