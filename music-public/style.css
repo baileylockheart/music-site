@@ -151,6 +151,7 @@ textarea{
     text-align: center;
     color:var(--white);
     font-size:1rem;
+    font-weight: 500;
 }
 /*buttons!!*/
 button{
