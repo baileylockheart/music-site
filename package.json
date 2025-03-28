@@ -1,0 +1,19 @@
+{
+  "name": "bailey.lockheart.love",
+  "version": "2.0.0",
+  "description": "NERVY",
+  "homepage": "https://github.com/baileylockheart/music-site#readme",
+  "bugs": {
+    "url": "https://github.com/baileylockheart/music-site/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baileylockheart/music-site.git"
+  },
+  "scripts": {
+    "build": "npx @11ty/eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

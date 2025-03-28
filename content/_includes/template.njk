@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bailey Lockheart // {{ title }}</title>
+
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light only"/>
+    <meta name="theme-color" content="#510B08">
+    
+    <!--meta tags-->
+    <meta name="description" content="{{ description }}"/>
+    <meta property="og:site_name" content="Lockheart Love"/>
+    <meta property="og:title" content="Bailey Lockheart // {{ title }}"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="{{ description }}"/>
+    <meta property="og:image" content="https://i.imgur.com/SewwaVX.png"/>
+    <meta property="og:image:height" content="800"/>
+    <meta property="og:url" content="https://bailey.lockheart.love/{{ name }}"/>
+    
+    <meta name="twitter:title" content="Bailey Lockheart // {{ title }}" />
+    <meta name="twitter:image" content="https://i.imgur.com/SewwaVX.png">
+    <meta name="twitter:description" content="{{ description }}">
+    <meta property="twitter:card" content="summary_large_image"/>
+    
+    <link rel="canonical" href="https://bailey.lockheart.love/{{ name }}"/>
+    <link rel="icon" type="image/x-icon" href="/images/icon.png">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    {{ css | safe }}
+    {{ js | safe }}
+    <div id="preloader"></div>
+</head>
+<body>
+    <div id="container">
+        <div id="content">
+            <header>
+                <a href="/"><img src="/images/logo.png" alt="Bailey Lockheart"></a>
+                <div id="nav">{% include 'nav.njk' %}</div>
+            </header>
+            <main>
+{{ content | safe }}
+            </main>
+            <footer>
+                <p>&#9825;&nbsp;&nbsp;<a href="https://lockheart.love/" target="_blank">Lockheart Love</a>&nbsp;|&nbsp;2025&nbsp;&nbsp;&#9825;</p>
+            </footer>
+        </div>
+    </div>
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function () {
+          loader.style.display = "none";
+        });
+    </script>
+</body>
+</html>

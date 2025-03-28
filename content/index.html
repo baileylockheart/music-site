@@ -1,0 +1,177 @@
+---
+layout: template.njk
+title: Home
+description: Hello! Welcome in!
+js: <script id="allIcons" src="/javascript/icons.js"></script>
+---
+<style>
+    #top{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #albumcover img{
+        width: 280px;
+        height: 280px;
+        object-fit: cover;
+        border-radius: 15px;
+        margin:15px
+    }
+    .static {
+        position: absolute;
+    }
+    .static:hover {
+        opacity: 0;
+        transition: 0.6s ease;
+        -webkit-transition: 0.6s ease
+    }
+    #topright{
+        padding: 5px 25px;
+        text-align: start;
+    }
+    #topright button{
+        width:210px
+    }
+    #musicring{
+        display: inline-flex;
+        margin: 5px 8px;
+        align-items:center !important;
+        justify-content: space-evenly;
+        font-size: 2.75rem;
+        font-weight: 100
+    }
+    #musicring img{
+        border-radius: 0;
+    }
+    #musicring a{
+        text-decoration: none;
+    }
+    #webrings{
+        display: block;
+    }
+    .box{
+        padding: 0 15px 15px;
+        margin: 15px auto
+    }
+    marquee{
+        padding-top:5px;
+        margin: 0 -15px;
+        background-color: var(--bg);
+        border-top: solid var(--borders);
+        border-bottom: solid var(--borders);
+    }
+    #surfwaves p{
+        margin:0 15px
+    }
+    #guestbook iframe{
+        width:440px;
+        height:290px;
+        border: solid 1px var(--text);
+        margin: 0 15px 0 -5px
+    }
+    @media (max-width: 770px){
+    #top{
+        display:block;
+        text-align: center;
+    }#webrings span{
+        display: block;
+    }
+    #surfwaves{
+        margin-top:10px
+    }
+    #guestbook iframe{
+        width:90%;
+        margin: 0
+    }
+}
+</style>
+<div id="top">
+    <a href="https://snd.click/lxxz" target="_blank">
+    <div id="albumcover">
+        <img class="static" src="/images/model/cutie.png">
+        <img class="active" src="/images/current-cover.webp">
+    </div></a>
+    <div id="topright">
+        <h2>Hello! Welcome in!</h2>
+        <hr>
+        <p>Listen to my music here:</p>
+        <div class="center">
+            <a href="https://open.spotify.com/artist/0gZWd2jEBp1DloD73xiL8L" target="_blank"><button style="background-color: #32B85FD4;">Spotify&nbsp;&nbsp;<svg><use xlink:href="#icon-spotify"></use></svg></button></a>
+            <a href="https://music.youtube.com/channel/UCrA-f9u_ycv5XGCOpF2bIVQ" target="_blank"><button style="background-color: #E63C3CD4;">YouTube Music&nbsp;&nbsp;<svg><use xlink:href="#icon-youtubemusic"></use></svg></button></a>
+            <a href="https://music.apple.com/us/artist/bailey-lockheart/1702204236" target="_blank"><button style="background-color: #000;">Apple Music&nbsp;&nbsp;<svg><use xlink:href="#icon-apple"></use></svg></button></a>
+        </div>
+        <p>and most other streaming platforms!</p>    
+    </div>
+</div>
+<marquee>
+    <a href="https://snd.click/lxxz" target="_blank"><img src="/images/stamps/a-different-place.png"></a>
+</marquee>
+<div class="box">
+    <h2>Webrings!</h2>
+    <div id="webrings">
+        <span id="musicring">
+            <a href="https://mr.jhorn.net/prev.php?slug=baileylockheart">&lt;</a>
+            <a href="https://mr.jhorn.net/index.php"><img src="/v1/images/webrings/musicring.gif"></a>
+            <a href="https://mr.jhorn.net/next.php?slug=baileylockheart">&gt;</a>
+        </span>  
+        <span><a href="https://baileylockheart.github.io/webring?baileylockheart-previous"><img src="/v1/images/webrings/lh-left.png"></a><a href="https://baileylockheart.github.io/webring"><img src="/v1/images/webrings/lh-home.png"></a><a href="https://baileylockheart.github.io/webring?baileylockheart-next"><img src="/v1/images/webrings/lh-right.png"></a></span>
+        <span><a href="https://jaysplace.neocities.org/"><img src="/v1/images/webrings/prev.png"></a><a href="https://nuthead.neocities.org/ring/"><img src="/v1/images/webrings/logo32.png"></a><a href="https://paupowpow.neocities.org/"><img src="/v1/images/webrings/next.png"></a></span> 
+        <map name="badge-wwstamp">
+            <area shape="rect" coords="66,38,79,49" href="https://webmasterwebring.netlify.app?baileylockheart-previous" alt="Previous">
+            <area shape="rect" coords="78,29,90,40" href="https://webmasterwebring.netlify.app?baileylockheart-next" alt="Next">
+            <area shape="rect" coords="13,15,63,47" href="https://webmasterwebring.netlify.app" alt="Webmaster Webring">
+        </map>
+        <img usemap="#badge-wwstamp" id="ww-stamp" src="/v1/images/webrings/stamp.png" alt="Webmaster Webring" width="99" height="56">
+        <br>
+        <a href='https://webring.dinhe.net/prev/https://bailey.lockheart.love/'>&larr;</a> <a href="https://webring.dinhe.net/">Retronaut Webring</a> <a href='https://webring.dinhe.net/next/https://bailey.lockheart.love/'>&rarr;</a><br>
+    </div>
+</div>
+<div class="flex">
+    <div id="guestbook">
+      <iframe src="https://baileylockheart.atabook.org/"></iframe> 
+    </div>
+    <div id="surfwaves">
+        <script type="text/javascript"> 
+            <!-- 
+            rssfeed_url = new Array(); 
+            rssfeed_url[0]="https://raw.githubusercontent.com/baileylockheart/rss-feeds/main/musicupdates.xml";  
+            rssfeed_frame_width="400"; 
+            rssfeed_frame_height="268"; 
+            rssfeed_scroll="off"; 
+            rssfeed_scroll_step="6"; 
+            rssfeed_scroll_bar="on"; 
+            rssfeed_target="_blank"; 
+            rssfeed_font_size="16"; 
+            rssfeed_font_face="monospace"; 
+            rssfeed_border="on"; 
+            rssfeed_css_url=""; 
+            rssfeed_title="off"; 
+            rssfeed_title_name=""; 
+            rssfeed_title_bgcolor="#3366ff"; 
+            rssfeed_title_color="#fff"; 
+            rssfeed_title_bgimage=""; 
+            rssfeed_footer="off"; 
+            rssfeed_footer_name="rss feed"; 
+            rssfeed_footer_bgcolor="#fff"; 
+            rssfeed_footer_color="#333"; 
+            rssfeed_footer_bgimage=""; 
+            rssfeed_item_title_length="50"; 
+            rssfeed_item_title_color="#f5f5f5"; 
+            rssfeed_item_bgcolor="#1F1F1F"; 
+            rssfeed_item_bgimage=""; 
+            rssfeed_item_border_bottom="on"; 
+            rssfeed_item_source_icon="off"; 
+            rssfeed_item_date="on"; 
+            rssfeed_item_description="on"; 
+            rssfeed_item_description_length="120"; 
+            rssfeed_item_description_color="#f5f5f5"; 
+            rssfeed_item_description_link_color="#B51010"; 
+            rssfeed_item_description_tag="on"; 
+            rssfeed_no_items="0"; 
+            rssfeed_cache = "7d0b8cf08566e5bd2d2472b8071b015d"; 
+            //--> 
+        </script> 
+        <script type="text/javascript" src="//feed.surfing-waves.com/js/rss-feed.js"></script> 
+        <p><a href="https://raw.githubusercontent.com/baileylockheart/rss-feeds/main/musicupdates.xml" target="_blank">RSS Feed</a> - Powered by <a href="https://surfing-waves.com/feed.htm" target="_blank">Surfing-Waves</a></p>
+    </div>
+</div>
