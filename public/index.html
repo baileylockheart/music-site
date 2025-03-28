@@ -24,17 +24,17 @@
     <meta property="twitter:card" content="summary_large_image"/>
     
     <link rel="canonical" href="https://bailey.lockheart.love/"/>
-    <link rel="icon" type="image/x-icon" href="/images/icon.png">
-    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
     
-    <script id="allIcons" src="/javascript/icons.js"></script>
+    <script id="allIcons" src="javascript/icons.js"></script>
     <div id="preloader"></div>
 </head>
 <body>
     <div id="container">
         <div id="content">
             <header>
-                <a href="/"><img src="/images/logo.png" alt="Bailey Lockheart"></a>
+                <a href="/"><img src="images/logo.png" alt="Bailey Lockheart"></a>
                 <div id="nav"><div id="mainnav">
     <a href="about">About Me</a>
     <a href="info">Site Info</a>
@@ -182,8 +182,8 @@
 <div id="top">
     <a href="https://snd.click/lxxz" target="_blank">
     <div id="albumcover">
-        <img class="static" src="/images/model/cutie.png">
-        <img class="active" src="/images/current-cover.webp">
+        <img class="static" src="images/model/cutie.png">
+        <img class="active" src="images/current-cover.webp">
     </div></a>
     <div id="topright">
         <h2>Hello! Welcome in!</h2>
@@ -198,7 +198,7 @@
     </div>
 </div>
 <marquee>
-    <a href="https://snd.click/lxxz" target="_blank"><img src="/images/stamps/a-different-place.png"></a>
+    <a href="https://snd.click/lxxz" target="_blank"><img src="images/stamps/a-different-place.png"></a>
 </marquee>
 <div class="box">
     <h2>Webrings!</h2>
@@ -275,10 +275,14 @@
             </footer>
         </div>
     </div>
+    <script src='javascript/overlay-widget.js'></script>
     <script>
+        kofiWidgetOverlay.draw('baileylockheart', {
+            'type': 'floating-chat'
+        });
         var loader = document.getElementById("preloader");
         window.addEventListener("load", function () {
-          loader.style.display = "none";
+        loader.style.display = "none";
         });
     </script>
 </body>

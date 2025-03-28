@@ -24,17 +24,17 @@
     <meta property="twitter:card" content="summary_large_image"/>
     
     <link rel="canonical" href="https://bailey.lockheart.love/links"/>
-    <link rel="icon" type="image/x-icon" href="/images/icon.png">
-    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
     
-    <script id="allIcons" src="/javascript/icons.js"></script>
+    <script id="allIcons" src="javascript/icons.js"></script>
     <div id="preloader"></div>
 </head>
 <body>
     <div id="container">
         <div id="content">
             <header>
-                <a href="/"><img src="/images/logo.png" alt="Bailey Lockheart"></a>
+                <a href="/"><img src="images/logo.png" alt="Bailey Lockheart"></a>
                 <div id="nav"><div id="mainnav">
     <a href="about">About Me</a>
     <a href="info">Site Info</a>
@@ -107,7 +107,7 @@
 <h2>My Button!</h2>
 <img class="linkbtn" src="images/baileylockheartbtn.png" style="padding: 3px">
 <textarea><a target="_blank" href="https://bailey.lockheart.love/"><img src="https://file.garden/ZrZSgsrYfQXsO7QH/buttons/baileylockheartbtn.png" width="88" height="31"></a></textarea>
-<p>My button is sized up for quality, so feel free to resize as needed ^^<br><a href="/contact">Let me know</a> if you linked me, and I'll link you back!</p>
+<p>My button is sized up for quality, so feel free to resize as needed ^^<br><a href="contact">Let me know</a> if you linked me, and I'll link you back!</p>
 <hr>
 <div class="linkbtn">
     <h2>Other cool sites!</h2>
@@ -145,10 +145,14 @@
             </footer>
         </div>
     </div>
+    <script src='javascript/overlay-widget.js'></script>
     <script>
+        kofiWidgetOverlay.draw('baileylockheart', {
+            'type': 'floating-chat'
+        });
         var loader = document.getElementById("preloader");
         window.addEventListener("load", function () {
-          loader.style.display = "none";
+        loader.style.display = "none";
         });
     </script>
 </body>

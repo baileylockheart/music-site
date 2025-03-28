@@ -24,17 +24,17 @@
     <meta property="twitter:card" content="summary_large_image"/>
     
     <link rel="canonical" href="https://bailey.lockheart.love/contact"/>
-    <link rel="icon" type="image/x-icon" href="/images/icon.png">
-    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
     
-    <script id="allIcons" src="https://carrd-icons.netlify.app/icons.js"></script>
+    <script id="allIcons" src="javascript/icons.js"></script>
     <div id="preloader"></div>
 </head>
 <body>
     <div id="container">
         <div id="content">
             <header>
-                <a href="/"><img src="/images/logo.png" alt="Bailey Lockheart"></a>
+                <a href="/"><img src="images/logo.png" alt="Bailey Lockheart"></a>
                 <div id="nav"><div id="mainnav">
     <a href="about">About Me</a>
     <a href="info">Site Info</a>
@@ -118,7 +118,7 @@
 <div class="flex">
     <div id="text">
         <p>If you want to contact me, you can fill out this form! It's one of the best ways to get a long message to me right now. If the form doesn't work, or if you'd simply prefer it, you can <a href="mailto:lockheartlove143@proton.me">email me</a> as well!</p>
-        <p>I have both <a href="https://baileylockheart.tumblr.com">Tumblr</a> and <a href="https://neospring.org/@lockheartlove" target="_blank">Neospring</a>, which you can use if you'd like to send me an anonymous message!</p>
+        <p>I have both <a href="https://baileylockheart.tumblr.com" target="_blank">Tumblr</a> and <a href="https://neospring.org/@lockheartlove" target="_blank">Neospring</a>, which you can use if you'd like to send me an anonymous message!</p>
         <p>Additionally, you can shoot my a DM if you'd like to contact me more directly! My notifications are iffy on Instagram, but it's an option :3</p>
         <hr>
         <div class="center">
@@ -139,10 +139,14 @@
             </footer>
         </div>
     </div>
+    <script src='javascript/overlay-widget.js'></script>
     <script>
+        kofiWidgetOverlay.draw('baileylockheart', {
+            'type': 'floating-chat'
+        });
         var loader = document.getElementById("preloader");
         window.addEventListener("load", function () {
-          loader.style.display = "none";
+        loader.style.display = "none";
         });
     </script>
 </body>

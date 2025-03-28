@@ -24,8 +24,8 @@
     <meta property="twitter:card" content="summary_large_image"/>
     
     <link rel="canonical" href="https://bailey.lockheart.love/about"/>
-    <link rel="icon" type="image/x-icon" href="/images/icon.png">
-    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
     
     
     <div id="preloader"></div>
@@ -34,7 +34,7 @@
     <div id="container">
         <div id="content">
             <header>
-                <a href="/"><img src="/images/logo.png" alt="Bailey Lockheart"></a>
+                <a href="/"><img src="images/logo.png" alt="Bailey Lockheart"></a>
                 <div id="nav"><div id="mainnav">
     <a href="about">About Me</a>
     <a href="info">Site Info</a>
@@ -138,7 +138,7 @@
 </style>
 <div class="flex">
     <div id="pfp">
-        <img src="/images/model/info.png">
+        <img src="images/model/info.png">
         <h3>18 | Any Pronouns | INFP-T</h3>
     </div>
     <div id="top">
@@ -167,10 +167,14 @@
             </footer>
         </div>
     </div>
+    <script src='javascript/overlay-widget.js'></script>
     <script>
+        kofiWidgetOverlay.draw('baileylockheart', {
+            'type': 'floating-chat'
+        });
         var loader = document.getElementById("preloader");
         window.addEventListener("load", function () {
-          loader.style.display = "none";
+        loader.style.display = "none";
         });
     </script>
 </body>
