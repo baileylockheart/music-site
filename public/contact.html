@@ -101,10 +101,16 @@
         width: 700px;
         padding: 0 15px;
     }
-    
+    iframe#tally{
+        width:80%;
+        height:430px
+    }
 @media (max-width: 770px){
     #text{
         width: auto
+    }
+    iframe#tally{
+        width:100%
     }
 }
 </style>
@@ -124,7 +130,7 @@
         </div>
         <hr class="invisible">
     </div>
-    <iframe data-tally-src="https://tally.so/embed/mZel0A?hideTitle=1&transparentBackground=1" loading="lazy" width="80%" height="430" frameborder="0" marginheight="0" marginwidth="0" title="Music Contact Form"></iframe>
+    <iframe id="tally" data-tally-src="https://tally.so/embed/mZel0A?hideTitle=1&transparentBackground=1" loading="lazy" frameborder="0" marginheight="0" marginwidth="0" title="Music Contact Form"></iframe>
     <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
 </div>
             </main>
