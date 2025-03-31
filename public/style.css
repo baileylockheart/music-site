@@ -1,10 +1,10 @@
 @font-face {
-    font-family: "Futura";
-    src: url("/fonts/FuturaCyrillicMedium.ttf");
+    font-family: "Futura Cyrillic Medium";
+    src: url("fonts/FuturaCyrillicMedium.ttf");
 }
 @font-face {
     font-family: "Futura Display";
-    src: url("/fonts/Futura Display.ttf");
+    src: url("fonts/Futura Display.ttf");
 }
 :root{
     --bg:#121212;
@@ -15,7 +15,7 @@
     --accent:#510B08;
     --light:#B51010;
     --lighter:#e0353549;
-    --sans: "Futura", sans-serif;
+    --sans: "Futura Cyrillic Medium", sans-serif;
     --serif: "Futura Display", serif;
 }
 html{
