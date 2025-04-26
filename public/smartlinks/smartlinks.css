@@ -1,0 +1,223 @@
+@font-face {
+    font-family: "Futura Cyrillic Medium";
+    src: url("/fonts/FuturaCyrillicMedium.ttf");
+}
+@font-face {
+    font-family: "Futura Display";
+    src: url("/fonts/Futura Display.ttf");
+}
+:root{
+    --bg:#121212;
+    --main:#1F1F1F;
+    --text:whitesmoke;
+    --borders:rgb(86, 81, 81);
+    --btn:rgba(192, 192, 192, 0.648);
+    --accent:#510B08;
+    --light:#B51010;
+    --lighter:#d8d8d849;
+    --sans: "Futura Cyrillic Medium", sans-serif;
+    --serif: "Futura Display", serif;
+}
+html{
+    height:100%;
+    width:100%;
+    font-size:18px;
+}
+body:before{
+    background-attachment: scroll;
+    content: '';
+    display: block;
+    position: fixed;
+    pointer-events: none;
+    width:100vw;
+    height:100vh;
+    left:0;
+    top:0;
+    transform: scale(1);
+    z-index: -700;
+    background-repeat: center no-repeat;
+    background-attachment: fixed;
+    background-size: center;
+}
+body{
+    font-family: var(--sans);
+    color: var(--text);
+    font-size:1rem;
+    line-height:normal;
+    font-weight:500;
+}
+body, html {
+    scrollbar-width: auto;
+    scrollbar-color: var(--light) var(--borders);
+}
+::selection {
+    background: var(--light);
+    color: var(--text);
+}
+/*let's give it a shot­*/
+#container{
+    max-width:500px;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    padding-bottom:15px
+}
+#content{
+    background: linear-gradient(to bottom, var(--borders) 0%,var(--bg) 30%, var(--main) 100%);
+    position: relative;
+    border: solid 2px var(--borders);
+    border-radius: 15px;
+    padding: 15px 15px 0;
+}
+.box{
+    background-color: var(--main);
+    border: solid 2px var(--btn);
+    border-radius: 15px;
+    padding: 15px;
+}
+.flex{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    background-color: var(--light);
+    margin: 15px -15px 0;
+    border-bottom-right-radius: 13px;
+    border-bottom-left-radius: 13px;
+}
+footer div{
+    padding: 15px 150px;
+    display: flex;
+    justify-content: space-around;
+}
+header, footer{
+    text-align: center;
+}
+footer a:hover, footer svg:hover{
+    color: var(--accent);
+    transition: 0.6s ease;
+    -webkit-transition: 0.6s ease
+}
+header img{
+    height: 80px;
+    margin: 15px;
+}
+img {
+    image-rendering: auto;
+}
+/*PLACES EVERYONE*/
+.center{
+    text-align: center;
+}
+/*text*/
+h1, h2, h3, h4{
+    font-family: var(--serif);
+    font-weight: 200;
+    line-height: 1rem;
+}
+textarea{
+    background-color: var(--borders);
+    color: var(--text);
+    border: dashed 3px var(--text);
+    font-family: var(--sans);
+    font-size:0.7rem;
+    padding: 2px;
+}
+/*buttons!!*/
+button{
+    border:none;
+    border-radius:15px;
+    color: var(--text);
+    background: linear-gradient(to bottom, var(--btn) 0%, #00000000 30%);
+    font-family: var(--sans);
+    font-size:1.15rem;
+    padding: 15px 0;
+    margin:0  0 0.7rem;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0px 5px var(--lighter);
+    width:100%
+}
+button:hover, header img:hover {
+    transition: all .2s ease-out;
+    transform: scale(1.02); 
+}
+#btnbox{
+    margin: 15px auto
+}
+img.linkbtn, .linkbtn img{
+    width: 88px;
+    height:31px;
+}
+.linkbtn img:hover{
+    transition: all .2s ease-out;
+    transform: scale(1.05); 
+}
+/*The little pieces*/
+hr{
+    background-color:var(--text);
+    border:none;
+    border-radius:5px;
+    height:0.15rem;
+}
+hr.half{
+    background-color:var(--btn);
+    border:none;
+    border-radius:5px;
+    height:0.15rem;
+}
+hr.invisible{
+    display:none;
+    background-color:var(--text);
+    border:none;
+    border-radius:5px;
+    height:0.15rem;
+}
+a{
+    text-align: inherit;
+    text-decoration: underline;
+    color:inherit
+}
+a:hover{
+    color: var(--light);
+    transition: 0.6s ease;
+    -webkit-transition: 0.6s ease
+}
+svg{
+    min-width: 16px;
+    width: 1.25rem;
+    margin: -67px 0;
+    fill:var(--text)
+}
+#preloader {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background: var(--accent)
+      url("/v1/images/oval.svg")
+      no-repeat center;
+    z-index: 9999;
+}
+/*the dreaded sizing*/
+@media (max-width: 770px){
+    html{
+        font-size:18px
+    }
+    .flex, hr.invisible{
+        display:block;
+        text-align: center;
+    }
+    button{
+        width:90%
+    }
+    #mobilenav{
+        display: block;
+    }
+    #mainnav{display:none}
+}

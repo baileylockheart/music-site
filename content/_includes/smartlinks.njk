@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{ title }} - Bailey Lockheart</title>
+
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light only"/>
+    <meta name="theme-color" content="#{{ theme }}">
+    
+    <!--meta tags-->
+    <meta name="description" content="{{ description }}"/>
+    <meta property="og:site_name" content="Lockheart Love"/>
+    <meta property="og:title" content="{{ title }} - Bailey Lockheart"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="{{ description }}"/>
+    <meta property="og:image" content="https://bailey.lockheart.love{{ cover }}"/>
+    <meta property="og:image:height" content="800"/>
+    <meta property="og:url" content="https://bailey.lockheart.love/smartlinks/{{ name }}"/>
+    
+    <meta name="twitter:title" content="{{ title }} - Bailey Lockheart" />
+    <meta name="twitter:image" content="https://bailey.lockheart.love{{ cover }}">
+    <meta name="twitter:description" content="{{ description }}">
+    <meta property="twitter:card" content="summary_large_image"/>
+    
+    <link rel="canonical" href="https://bailey.lockheart.love/smartlinks/{{ name }}"/>
+    <link rel="icon" type="image/x-icon" href="/images/icon.png">
+    <link rel="stylesheet" type="text/css" href="smartlinks.css">
+    <script id="allIcons" src="/javascript/icons.js"></script>
+    <div id="preloader"></div>
+</head>
+<body>
+    <div id="container">
+        <div id="content"><img src="{{ cover }}" width="100%">
+            <h2>Bailey Lockheart</h2>
+            <h1>{{ title }}</h1>
+            <div class="box">Find it here!</div>
+            <main id="btnbox">
+{{ content | safe }}
+            </main>
+            <footer>
+                <div>
+                    <a href="https://open.spotify.com/artist/0gZWd2jEBp1DloD73xiL8L" target="_blank"><svg><use xlink:href="#icon-spotify"></use></svg></a>
+                    <a href="https://www.youtube.com/@bailey_lockheart" target="_blank"><svg><use xlink:href="#icon-youtube"></use></svg></a>
+                    <a href="https://ko-fi.com/O5O518XBJA" target="_blank"><svg><use xlink:href="#icon-kofi"></use></svg></a>
+                    <a href="https://bailey.lockheart.love" target="_blank"><svg><use xlink:href="#icon-globe"></use></svg></a>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function () {
+        loader.style.display = "none";
+        });
+    </script>
+</body>
+</html>
